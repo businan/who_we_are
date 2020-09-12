@@ -1,0 +1,56 @@
+.main{
+    border: 5px solid orange;
+    display: grid;
+    grid-template-rows: 40% 40%;
+    grid-template-columns: 27.5% 27.5% 27.5%;
+    grid-template-areas: 
+        "member1 member2 member3"
+        "member4 member5 member6";
+    
+    row-gap: 10%;
+    column-gap: 8%;
+
+    img{
+        
+        width: 300px;
+        height: 430px;
+        border-radius: 1%;
+    }
+
+    .crew {
+        border: 5px solid green;
+        position: relative;
+        span {
+            position: absolute;
+            writing-mode: vertical-lr;
+            margin-left: 15px;
+            text-transform: uppercase;
+            font-weight: lighter;
+            
+        }
+        p {
+            font-family: $textFontFamily;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+    }
+    
+    .member1 {
+        grid-area: member1;
+    }
+    .member2 {
+        grid-area: member2;
+    }
+    .member3 {
+        grid-area: member3;
+    }
+    .member4 {
+        grid-area: member4;
+    }
+    .member5 {
+        grid-area: member5;
+    }
+    .member6 {
+        grid-area: member6;
+    }
+}

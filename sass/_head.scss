@@ -1,0 +1,43 @@
+.head {
+    padding: 0;
+    //margin-top: -30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    #name {
+        grid-area: left_head;
+        width: 50%;
+        
+        h1 {
+            font-size: 2rem;
+            font-family: $headingFontFamily;           
+        }   
+
+    }
+    #whoWeAre {
+        width: 50%;
+        margin-top: 10px;
+        h3,p {
+            font-family: $textFontFamily;
+        }
+        h3 {
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,17 +4,18 @@ html,body {
     box-sizing: border-box;
 
     .container {
-        width: 60%;
-        height: 150vh;
-        margin: 50px auto;
+        display: block;
+        width: 1140px;
+        height: 140vh;
+        margin: 70px auto 150px auto;
         border: 5px solid blue;
         display: grid;
-        grid-template-rows: 20% 75%;
+        grid-template-rows: 10% 84%;
         grid-template-columns: 100%;
         grid-template-areas: 
             "head"
             "main";
-        gap: 5%;
+        gap: 6%;
 
         .head {
             grid-area: head;
