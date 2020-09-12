@@ -2,7 +2,6 @@
   width: inherit;
   height: inherit;
   margin: 80px auto 50px auto;
-  // border: 5px solid yellow;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -41,7 +40,6 @@
   }
 
   .crew {
-    // border: 5px solid green;
     position: relative;
 
     span {
@@ -70,53 +68,30 @@
 }
 @media (max-width: 970px) {
   .main {
-    width: 870px;
-    height: 120vh;
-    margin: 10px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-
-    grid-template-areas:
-      "row11 row12"
-      "row21 row22"
-      "row31 row32";
-
-    .member1 {
-      grid-area: row11;
-    }
-    .member2 {
-      grid-area: row12;
-    }
-    .member3 {
-      grid-area: row21;
-      margin-top: -100px;
-    }
-    .member4 {
-      grid-area: row22;
-      padding-top: 100px;
-    }
-    .member5 {
-      grid-area: row31;
-    }
-    .member6 {
-      grid-area: row32; 
-      padding-top: 200px;
-      margin-bottom: 100px;     
-    }
+    width: 100%;
+    display: flex;
     
-
+    flex-wrap: wrap;
+    
+    
     img {
-      width: 335px;
-      height: 500px;
+      width: 75%;
+      height: auto;
     }
     .crew {
+      margin: 0;
+      padding: 0;
+      width: 47%;
+      
       span {
         font-size: 0.66rem;
       }
       p {
         font-size: 1rem;
       }
+    }
+    .member2, .member4, .member6 {
+      padding-top: 100px;
     }
   }
 }

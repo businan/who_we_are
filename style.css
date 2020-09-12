@@ -20,7 +20,7 @@ html .container, body .container {
 }
 @media (max-width: 970px) {
   html .container, body .container {
-    width: 970px;
+    width: 100%;
     height: 130vh;
     margin: 0 40px;
   }
@@ -56,7 +56,7 @@ html .container, body .container {
     flex-direction: column;
   }
   .head #name {
-    width: 40%;
+    width: 100%;
   }
   .head #whoWeAre {
     width: 100vw;
@@ -129,45 +129,27 @@ html .container, body .container {
 }
 @media (max-width: 970px) {
   .main {
-    width: 870px;
-    height: 120vh;
-    margin: 10px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "row11 row12" "row21 row22" "row31 row32";
-  }
-  .main .member1 {
-    grid-area: row11;
-  }
-  .main .member2 {
-    grid-area: row12;
-  }
-  .main .member3 {
-    grid-area: row21;
-    margin-top: -100px;
-  }
-  .main .member4 {
-    grid-area: row22;
-    padding-top: 100px;
-  }
-  .main .member5 {
-    grid-area: row31;
-  }
-  .main .member6 {
-    grid-area: row32;
-    padding-top: 200px;
-    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
   .main img {
-    width: 335px;
-    height: 500px;
+    width: 75%;
+    height: auto;
+  }
+  .main .crew {
+    margin: 0;
+    padding: 0;
+    width: 47%;
   }
   .main .crew span {
     font-size: 0.66rem;
   }
   .main .crew p {
     font-size: 1rem;
+  }
+  .main .member2, .main .member4, .main .member6 {
+    padding-top: 100px;
   }
 }
 
