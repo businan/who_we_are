@@ -1,14 +1,11 @@
 .head {
+    // border: 5px solid red;
     padding: 0;
-    //margin-top: -30px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 
     #name {
-        grid-area: left_head;
-        width: 50%;
-        
         h1 {
             font-size: 2rem;
             font-family: $headingFontFamily;           

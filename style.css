@@ -6,24 +6,11 @@ html, body {
   box-sizing: border-box;
 }
 html .container, body .container {
-  display: block;
   width: 1140px;
-  height: 140vh;
-  margin: 70px auto 150px auto;
-  border: 5px solid blue;
-  display: grid;
-  grid-template-rows: 10% 84%;
-  grid-template-columns: 100%;
-  grid-template-areas: "head" "main";
-  gap: 6%;
-}
-html .container .head, body .container .head {
-  grid-area: head;
-  border: 5px solid red;
-}
-html .container .main, body .container .main {
-  grid-area: main;
-  border: 5px solid yellow;
+  height: 145vh;
+  margin: 70px auto 100px auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .head {
@@ -31,10 +18,6 @@ html .container .main, body .container .main {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-}
-.head #name {
-  grid-area: left_head;
-  width: 50%;
 }
 .head #name h1 {
   font-size: 2rem;
@@ -53,13 +36,21 @@ html .container .main, body .container .main {
 }
 
 .main {
-  border: 5px solid orange;
-  display: grid;
-  grid-template-rows: 40% 40%;
-  grid-template-columns: 27.5% 27.5% 27.5%;
-  grid-template-areas: "member1 member2 member3" "member4 member5 member6";
-  row-gap: 10%;
-  column-gap: 8%;
+  display: flex;
+  flex-direction: column;
+}
+.main .row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .member2, .main .member5 {
+  margin-top: 120px;
 }
 .main img {
   width: 300px;
@@ -67,7 +58,6 @@ html .container .main, body .container .main {
   border-radius: 1%;
 }
 .main .crew {
-  border: 5px solid green;
   position: relative;
 }
 .main .crew span {
@@ -81,24 +71,6 @@ html .container .main, body .container .main {
   font-family: "Poppins", sans-serif;
   margin-top: 15px;
   font-weight: 600;
-}
-.main .member1 {
-  grid-area: member1;
-}
-.main .member2 {
-  grid-area: member2;
-}
-.main .member3 {
-  grid-area: member3;
-}
-.main .member4 {
-  grid-area: member4;
-}
-.main .member5 {
-  grid-area: member5;
-}
-.main .member6 {
-  grid-area: member6;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,26 +4,13 @@ html,body {
     box-sizing: border-box;
 
     .container {
-        display: block;
+        
         width: 1140px;
-        height: 140vh;
-        margin: 70px auto 150px auto;
-        border: 5px solid blue;
-        display: grid;
-        grid-template-rows: 10% 84%;
-        grid-template-columns: 100%;
-        grid-template-areas: 
-            "head"
-            "main";
-        gap: 6%;
-
-        .head {
-            grid-area: head;
-            border: 5px solid red;
-        }
-        .main {
-            grid-area: main;
-            border: 5px solid yellow;
-        }
-    }
+        height: 145vh;
+        margin: 70px auto 100px auto;
+        //border: 5px solid blue;
+        display: flex;
+        flex-direction: column;
+      
+}
 }
