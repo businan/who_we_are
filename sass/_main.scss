@@ -45,7 +45,7 @@
     span {
       position: absolute;
       writing-mode: vertical-lr;
-      margin-left: 20px;
+      margin-left: 10px;
       text-transform: uppercase;
       font-weight: 100;
       font-size: 0.8rem;
@@ -69,8 +69,8 @@
 @media (max-width: 970px) {
   .main {
     width: 100%;
+    margin-top: 10px;
     display: flex;
-    
     flex-wrap: wrap;
     
     
@@ -84,7 +84,7 @@
       width: 47%;
       
       span {
-        font-size: 0.66rem;
+        font-size: 0.6rem;
       }
       p {
         font-size: 1rem;
