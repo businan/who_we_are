@@ -1,0 +1,26 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html .container, body .container {
+  width: 60%;
+  height: 150vh;
+  margin: 50px auto;
+  border: 5px solid blue;
+  display: grid;
+  grid-template-rows: 20% 75%;
+  grid-template-columns: 100%;
+  grid-template-areas: "head" "main";
+  gap: 5%;
+}
+html .container .head, body .container .head {
+  grid-area: head;
+  border: 5px solid red;
+}
+html .container .main, body .container .main {
+  grid-area: main;
+  border: 5px solid yellow;
+}
+
+/*# sourceMappingURL=style.css.map */
