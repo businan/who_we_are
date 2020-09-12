@@ -6,11 +6,24 @@ html, body {
   box-sizing: border-box;
 }
 html .container, body .container {
-  width: 1140px;
-  height: 145vh;
+  width: 1170px;
+  height: 130vh;
   margin: 70px auto 100px auto;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 1170px) {
+  html .container, body .container {
+    width: 970px;
+    height: 130vh;
+  }
+}
+@media (max-width: 970px) {
+  html .container, body .container {
+    width: 970px;
+    height: 130vh;
+    margin: 0 40px;
+  }
 }
 
 .head {
@@ -19,43 +32,76 @@ html .container, body .container {
   align-items: flex-start;
   justify-content: space-between;
 }
+.head #name {
+  width: 50%;
+}
 .head #name h1 {
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-family: "PT Serif", serif;
 }
 .head #whoWeAre {
-  width: 50%;
   margin-top: 10px;
 }
 .head #whoWeAre h3, .head #whoWeAre p {
   font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
 }
 .head #whoWeAre h3 {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
+@media (max-width: 970px) {
+  .head {
+    flex-direction: column;
+  }
+  .head #name {
+    width: 40%;
+  }
+  .head #whoWeAre {
+    width: 100vw;
+    margin-top: -10px;
+  }
+  .head #whoWeAre p {
+    font-size: 0.9rem;
+    margin-top: -20px;
+  }
+}
 .main {
-  display: flex;
-  flex-direction: column;
+  width: inherit;
+  height: inherit;
+  margin: 80px auto 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "row11 row12 row13" "row21 row22 row23";
 }
-.main .row1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.main .member1 {
+  grid-area: row11;
 }
-.main .row2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.main .member2 {
+  grid-area: row12;
+  margin: 100px 0;
 }
-.main .member2, .main .member5 {
-  margin-top: 120px;
+.main .member3 {
+  grid-area: row13;
+}
+.main .member4 {
+  grid-area: row21;
+  margin-top: -100px;
+}
+.main .member5 {
+  grid-area: row22;
+}
+.main .member6 {
+  grid-area: row23;
+  margin-top: -100px;
 }
 .main img {
   width: 300px;
   height: 430px;
   border-radius: 1%;
+  box-shadow: 0px 5px 10px #ccc;
 }
 .main .crew {
   position: relative;
@@ -63,14 +109,66 @@ html .container, body .container {
 .main .crew span {
   position: absolute;
   writing-mode: vertical-lr;
-  margin-left: 15px;
+  margin-left: 20px;
   text-transform: uppercase;
-  font-weight: lighter;
+  font-weight: 100;
+  font-size: 0.8rem;
 }
 .main .crew p {
-  font-family: "Poppins", sans-serif;
+  font-family: "PT Serif", serif;
   margin-top: 15px;
   font-weight: 600;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1170px) {
+  .main img {
+    width: 250px;
+    height: 350px;
+  }
+}
+@media (max-width: 970px) {
+  .main {
+    width: 870px;
+    height: 120vh;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "row11 row12" "row21 row22" "row31 row32";
+  }
+  .main .member1 {
+    grid-area: row11;
+  }
+  .main .member2 {
+    grid-area: row12;
+  }
+  .main .member3 {
+    grid-area: row21;
+    margin-top: -100px;
+  }
+  .main .member4 {
+    grid-area: row22;
+    padding-top: 100px;
+  }
+  .main .member5 {
+    grid-area: row31;
+  }
+  .main .member6 {
+    grid-area: row32;
+    padding-top: 200px;
+    margin-bottom: 100px;
+  }
+  .main img {
+    width: 335px;
+    height: 500px;
+  }
+  .main .crew span {
+    font-size: 0.66rem;
+  }
+  .main .crew p {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

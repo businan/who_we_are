@@ -4,13 +4,27 @@ html,body {
     box-sizing: border-box;
 
     .container {
-        
-        width: 1140px;
-        height: 145vh;
+        width: 1170px;
+        height: 130vh;
         margin: 70px auto 100px auto;
         //border: 5px solid blue;
         display: flex;
         flex-direction: column;
-      
+        
 }
+@media (max-width: 1170px){
+    .container {
+        width: 970px;
+        height: 130vh;
+        
+    }
+    }
+@media (max-width: 970px){
+    .container {
+        width: 970px;
+        height: 130vh;
+        margin:0 40px;
+            
+    }
+    }
 }
